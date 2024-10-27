@@ -1,0 +1,122 @@
+:root{
+    --cor-fundo: green ;
+    --cor-fundo-tabela: purple ;
+    --cor-fundo-tabela-cabecalho-principal: red ;
+    --cor-fundo-tabela-cabecalho: blue ;
+    --cor-fundo-tabela-item: orange ;
+    --cor-principal: #0B0D20;
+    --cor-secundaria: #212333;
+    --cor-destaque: #d3c47a;
+    --cor-destaque-secundario: blue ;
+    --cor-texto: #D7F9FF;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--cor-fundo) ;
+}
+
+h1 {
+    color: var(--cor-destaque);
+}
+
+h2 {
+    color: var(--cor-destaque-secundario);
+    margin: 0;
+    margin-left: 90px;
+    }
+
+input {
+    color: var(--cor-destaque-secundario);
+    margin: 0;
+    margin-left: 90px;
+    }
+
+td, th {
+  padding: .7em;
+  margin: 0;
+  /*border: 1px solid #ccc;*/
+  text-align: center;
+}
+
+th{
+  background: var(--cor-fundo-tabela-cabecalho) ;
+}
+
+th:nth-child(0){
+  background: var(--cor-fundo-tabela-cabecalho-principal) ;
+}
+
+th:nth-child(2){
+  background: green ;
+}
+
+th:nth-child(3){
+  background: orange ;
+}
+
+th:nth-child(4){
+  background: lightgray ;
+}
+
+th:nth-child(5){
+  background: #C8D197 ;
+}
+
+th:nth-child(6){
+  background: #11BAAC ;
+}
+
+td:nth-child(1){
+  font-weight:bold;
+  background: red ;
+}
+
+td:nth-child(2){
+  font-weight:bold;
+  background: #C54B2C ;
+}
+
+td:nth-child(3){
+  font-weight:bold;
+  background: #F2A4C4 ;
+}
+
+td:nth-child(4){
+  font-weight:bold;
+  background: #D1AA34 ;
+}
+
+td:nth-child(5){
+  font-weight:bold;
+  background: #A7A844 ;
+}
+
+td:nth-child(6){
+  font-weight:bold;
+  background: #A46583 ;
+}
+
+table{
+  background: var(--cor-fundo-tabela);
+  /*width: 100%;*/
+  margin-bottom : .5em;
+  table-layout: fixed;
+  text-align: center;
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+}
